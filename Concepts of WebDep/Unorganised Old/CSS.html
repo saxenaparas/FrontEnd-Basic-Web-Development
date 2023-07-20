@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+</head>
+
+<link rel="stylesheet" href="CSS.css"> 
+<!-- This external css willn't work as it's order is before internal css(<style> tags </style>) -->
+<!-- but if you uncomment the line below </style> tag then it's order is after internal css so it will carry more priority and gets implimented -->
+<!-- But, REMEMBER if we have used [!important] in css that will make it more prior irrespective of order of inline, internal and external css -->
+<style>
+    div {
+        color: aqua;
+        background-color: orangered;
+    }
+    /* In terms of priority inline is more prior to internal css due to order*/
+    /* Order matters in priority of inline ,external and internal css */
+    /* Apne nae jo css bad mei likhi hai wo precedense le leti hai */
+    /* But if we want that pervious css will take more precedence the use : [!important] before ';' */
+    p {
+        color: red;
+        background-color: hotpink !important;
+    }
+</style>
+<!-- <link rel="stylesheet" href="CSS.css"> -->
+<body>
+    <h3>CSS</h3>
+    <!-- This is an example of inline css -->
+    <p style="color: blue; background-color: yellow;">This is the implimentation of INLINE CSS.</p>
+    <!-- This is an example of INTERNAL CSS (as internally its styling is defined under style tag)-->
+    <div>
+        <span>This is an example of INTERNAL CSS.</span>
+    </div>
+</body>
+
+</html>

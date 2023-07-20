@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ids & Classes in HTML</title>
+</head>
+<body>
+    <h3>IDS AND CLASSES</h3>
+    <div id="mainBox" class="redBG blackBorder">
+        <!-- So, here id is used as an identifier to identify that element and class carry css styling properties like text color, size, font and margin, span, padding, backgroung color, etc. -->
+        <!-- That means if we want to give a specific style to this division block then in css we give this id mainBox and that specific styling get applied to this div block only -->
+        <!-- Also here, redBG and blackBorder are two different classes can carry two differnt styling properties and if we use class attribute in that tag then it gives that styling properties defined to them in a css file -->
+        <!-- Here, as we can see redBG and blackBorder are seprated by space so, by using space we can use many no. of classes of sfecific css styling and use them here all of them at once by just using a space sepration inside class attribute after one by one  -->
+        <!-- That means one element can carry multiple classes and one class can be carried on multipple elements -->
+        <!-- But, same id can't be given to any other element, it is unique for one element only -->
+    </div>
+    <!-- USING EMMET (It's buildin in VScode) -->
+    <!-- (span.redBG) if u type you get --> <span class="redBG"></span>
+    <!-- (span#spanid) if u type you get --> <span id="spanid"></span>
+    <!-- here, (.) is for class and (#) is for id -->
+    <!-- similarly if we type (div..blueSt.redBG.blackBD) we get --> <div class="blueSt redBG blackBD"></div>
+
+    <!-- Emmet takes div tag as default -->
+    <!-- (.redBG) you type you get --> <div class="redBG"></div>
+    <!-- Creating multiple elements using emmet -->
+
+    <!-- (span.class1.class2.class3*4) you type you get 4 similar elements using Emmet -->
+    <span class="class1 class2 class3">FIRST</span>
+    <span class="class1 class2 class3">SECOND</span>
+    <span class="class1 class2 class3">THIRD</span>
+    <span class="class1 class2 class3">FORTH</span>
+</body>
+</html>

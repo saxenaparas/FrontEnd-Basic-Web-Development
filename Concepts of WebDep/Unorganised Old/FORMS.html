@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMS</title>
+</head>
+
+<body>
+    <H2>THIS IS A HTML FORM</H2>
+    <form action="Backend.php">
+        <div>
+            <label for="name">NAME</label>
+            <input type="text" id="name">
+        </div>
+        <br>
+        <div>
+            <label for="age">AGE</label>
+            <input type="date" name="myAge" id="age">
+        </div>
+        <br>
+        <div>
+            GENDER:
+            <label for="male">Male</label>:<input type="radio" name="myGender" id="male">
+            <label for="female">Female</label>:<input type="radio" name="myGender" id="female">
+            <label for="oth">Other</label>:<input type="radio" name="myGender" id="oth">
+            <!-- In a radio selection if you give same name here in this case it's myGender then only one gets selected -->
+        </div>
+        <br>
+        <div>
+            <label for="eligibility"> Are You Eligable? : </label>
+            <input type="checkbox" name="myEligibility" id="eligibility" checked>
+            <!-- Here, I have used 'checked' word after id to make it ticked or checked by default when user opens the forum -->
+        </div>
+        <br>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="myEmail" id="email">
+        </div>
+        <br>
+        <div>
+            <label for="bonus">Bonus</label>
+            <input type="number" name="myBonus" id="bonus">
+            <!-- Here, in this bonus we can only input number no other character can be used except 'e' since if we want to write 10 to the power 12 then we can write it like this '10e12' like this -->
+        </div>
+        <br>
+        <div>
+            Write about yourself : <br> <textarea name="mytext" id="text" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">INDICA</option>
+                <option value="swf">SWIFT</option>
+                <option value="mat" selected>MARUTI</option>
+                <option value="hun">HUNDAI</option>
+            </select>
+        </div>
+        <br>
+        <div>
+            <input type="submit" value="SUBMIT NOW">
+            <input type="reset" value="RESET NOW">
+        </div>
+        <!-- Using [alt+(down/up/left/right)] key you can move the selected text in any direction and between any two lines -->
+    </form>
+
+</body>
+
+</html>

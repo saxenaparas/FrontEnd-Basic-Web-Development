@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Html Entities</title>
+</head>
+<body>
+    <div class="container">
+        <p>
+            This is a paragraph.
+        </p>
+    </div>
+    <div class="container">
+        <p>
+            This is another                         paragraph.
+        </p>
+        <!-- As we can see that by using multiple spaces it just counts as one single space in html -->
+        <!-- So, if wee want to give more spaces between them then we use [&nbsp;] means NON-BREAKING SPACE -->
+        <!-- If we use [&nbsp;] 'n' times then we get n times spaces -->
+    </div>
+    <div class="container">
+        <p>
+            This is also an &nbsp;&nbsp;&nbsp;&nbsp; paragraph with 4 spaces extra.
+        </p>
+    </div>
+    <!-- If we want to use angular brackets then we use [&lt;] for (<) and [&gt;] for (>) brackets -->
+    <div class="container">
+        <p>
+            This is a &lt;p&gt; tags.
+        </p>
+    </div>
+    <!-- Also, with the help of entites we can write those characters that are not present in your keyboard -->
+    <div class="container">
+        <p>
+            <p>This is called a pound : (&pound;).</p>
+            <p>This is called a copyright : (&copy;).</p>
+            <p>Fraction of 14 like this : (&frac14;).</p>
+            <p>Empty Character is : (&#8203;).</p>
+        </p>
+    </div>
+    <!-- We can also search on 'google Html entities reference' and we get to know about each and every characters in html that we can use -->
+</body>
+</html>

@@ -1,0 +1,18 @@
+/* NOW LETS GO LEARN CSS */
+/* SYNTAX OF CSS IS LIKE THIS :  */
+    /* p{color:blue;} */
+    /* Here, p is selector, color is the property and blue is the value. */
+    /* i.e. What value of property we wanted to give to p. */
+/* There are three ways to add css to the markup */
+    /* Inline */
+    /* Internal */
+    /* External */
+
+/* selector {property : value} */
+
+header, p.intro {
+    background-color: red;
+    border-radius: 10px;
+}
+
+/* here, [p.intro] => <p> tag having intro as class name  */

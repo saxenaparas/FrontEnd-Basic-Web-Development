@@ -1,0 +1,71 @@
+/*
+CSS : Cascading Style Sheets;
+> It handles the styling, desingning and presenattion of html page;
+
+Syntax:
+    selectors{
+        properties: value;
+    }
+
+> For class -> (.) and for id -> (#) is used as selectors;
+
+Type of Selectors in CSS:-          ------Examples------
+    > Type Selectors;               -> h1{}
+    > Universal Selectors;          -> *{}
+    > Class Selectors;              -> .class{}
+    > Id Selectors;                 -> #id{}
+    > Attribute Selectors;          -> tag[attribute="value"]{}
+    > Pseudo-Class Selectors;       -> tag::first-child{}   -> h1:hover{} or :visited{}, etc;
+    > Pseudo-Element Selectors;     -> tag::first-line{}    -> p::first-letter{} or ::first-line{}, etc;
+    > Descendant Combinator;        -> tag tag{}            -> article p{};
+    > Child Combinator;             -> tag > Child-tag{}    -> article > p{} -> All <p> tag inside <article> tag will get selected;
+    > Adjacent Sibling Combinator;  -> tag + Adjacent-tag{} -> h1 + p{};     -> <p> tag just after <h1>;
+    > General Sibling Combinator;   -> tag ~ tag{}          -> h1 ~ p{};
+
+    Example:-
+
+    li[class~="a"]{  
+        color:red;
+    }
+    -> All <li> tags having <class="_a_"> included weather <class="a b c"> class have three values [a,b,c] but a included so got selected;
+
+Background:-
+    color;
+    image:url("");
+    repeat:no repeat or repeat-x or repeat-y;
+    position:top or bottom 50px right 100px or left or right; 
+    size;
+    attachment; --> Can fix a image independant of scrolling;
+    position;
+
+font:-
+    weight; --> controls text boldness;
+
+text:-
+    align;
+    decoration;
+    transform;
+    indent;
+    height;
+    shadow; [x y z color]
+     
+line-height;
+letter-spacing;
+word-spacing;
+
+Short hand properties:-
+> Search google for more clearance;
+
+We can use google fonts or other websites to import fonts;
+
+HTML -> CSS -> JAVASCRIPT;  
+    First HTML 
+    then, CSS
+    then, JAVASCRIPT 
+        > get processed at the end;
+*/
+
+table,tr,th{
+    border: 2px solid black;
+    border-collapse: collapse;
+}

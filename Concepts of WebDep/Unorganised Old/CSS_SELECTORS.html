@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Selectors</title>
+</head>
+<!-- Using inline css -->
+<style>
+    /* Here, (#) means we have targetted the id */
+    /* And (.) means class */
+
+    /* ELEMENT SELECTOR */
+    h2{
+        color: chocolate;
+        background-color: indigo;
+    }
+    /* ID SELECTOR */
+    #secondPara{
+        color: orangered;
+    }
+    #Firstpara{
+        color: green;
+        background-color: aquamarine;
+    }
+    /* CLASS SELECTOR */
+    .bgBlue{
+        background-color: gold;
+    }
+    .selement{
+        font-style: italic;
+    }
+    /* GROUP SELECTOR */
+    footer, span{
+        background-color: hotpink;
+    } 
+
+</style>
+<body>
+    <h2>CSS SELECTORS</h2>
+    <p id="Firstpara">This is a simple para to demonstrate css selectors.</p>
+    <p id="secondPara" class="selement bgBlue">This Para id is 'secondPara' and class is 'selement'.</p>
+    <div>
+        <p id="Divpara1" class="selement">This para is inside div.</p>
+        <span>This is a span</span>
+    </div>
+    <footer>This is a footer</footer>
+</body>
+</html>

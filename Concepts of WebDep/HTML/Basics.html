@@ -1,0 +1,197 @@
+<!-- 
+HTML : Hypertext MrakUp Language;
+HTML sometimes refered or said as MarkUp for giving a static skeleton to web-applications and websites; 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- <meta> tags are used for SEOs  -->
+        <!-- Default boilerplate <meta> tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Other <meta> tags for SEOs  -->
+    <meta name="discription" content="This is discription">
+    <meta name="discription" content="Html, html, html basics, HTML Basics, Web-development">
+        <!--
+            NOINDEX: Website willn't get indexed on search results;
+            NOFOLLOW: Website internal links will also not get followed;
+            But we generally want to index and follow our website on search results so, we use INDEX and FOLLOW;
+            And there are several other meta tags are here which we use according to need;
+        -->
+    <meta name="robots" content="INDEX, FOLLOW">
+
+    <!-- <title> to give the title of the page -->
+    <title>Basics</title>
+    
+    <!-- To include external CSS -->
+    <link rel="stylesheet" href="../CSS/Basics.css">
+
+    <!-- To include external JavaScript -->
+    <script src="JAVASCRIPT/Basics.js"></script>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>PARAS</h1>
+    <h2>PARAS</h2>
+    <h3>PARAS</h3>
+    <h4>PARAS</h4>
+    <h5>PARAS</h5>
+    <h6>PARAS</h6>
+
+    <!-- <br> : break the rular will break and get to new line -->
+    <br>
+
+    <!-- Paragraph -->
+        <!-- For Dummy Text : lorem[number] -->
+        <!-- Other <tags> to impact font style -->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda vel quam exercitationem praesentium sunt, ducimus quidem voluptas inventore <strong>strong text</strong> <em> This is Emphased Text </em> excepturi natus esse, nesciunt dolore id alias, non tenetur tempora sed. <strike> This is Striked text</strike> Illum nostrum quia explicabo quod unde earum ea sunt eaque consectetur est harum quaerat, amet <b><i><u> This is bold italic and underlined text </u></i></b> quisquam ratione, doloremque animi repudiandae voluptatum laudantium enim dignissimos facere libero. Magnam porro dignissimos, rerum consequuntur consequatur ducimus quisquam eaque.</p>
+
+    <!-- links -->
+            <!-- target="_blank" is an attribute which will open the link in a new tab -->
+            <!-- Attributes modify the tags and give it a new properties -->
+    <a href="https://google.com" target="_blank">Go To Google</a><br>
+    <a href="https://facebook.com" target="_blank">Go TO Facebook</a><br>
+    <a href="https://source.unsplash.com/600x600/?random" target="_blank">Unsplash Random Photos</a><br>
+    <a href="https://twitter.com" target="_blank">Go To Twitter</a><br>
+    <a href="https://youtube.com" target="_blank">Go To Youtube</a><br>
+
+    <!-- Image -->
+            <!-- <alt> an attribute whose text is shown up when image isn't able to load  -->
+    <img src="https://source.unsplash.com/600x600/?image" alt="Image Isn't Able To Load">
+    
+    <!-- Lists -->
+        <!-- Attribute <type> gives style to bullet points or number patterns-->
+            <!-- Like type="disc"/"square"/"circle"/"I"/"i"/"A"/"a" for type="2"/"B" it starts from 2 and B -->
+        <!-- Two Types of list Ordered<ol> And Unordered<ul> -->
+            <!-- Unordered List -->
+    <ul>
+        <li>First item of unordered list</li>
+        <li>Second item of unordered list
+            <li>First Nested List in second point</li>
+            <li>Second Nested List in second point</li>
+            <li>Third Nested List in second point</li>
+        </li>
+        <li>Third item of unordered list</li>
+    </ul>
+            <!-- Ordered list  -->
+    <ol>
+        <li>First item of ordered list</li>
+        <li>Second item of ordered list</li>
+        <li>Third item of ordered list</li>
+    </ol>
+
+    <!-- Table 
+        Attribute <colspan> will merge the columns
+    -->
+    <table>
+        <thead>
+            <tr>
+                <th>Head Column 1</th>
+                <th>Head Column 2</th>
+                <th>Head Column 3</th>
+                <th>Head Column 4</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <th>Column 4</th>
+            </tr>
+            <tr>
+                <th>Column 1</th>
+                <th colspan="2">Column 2 & 3 Merged</th>
+                <th rowspan="2">Column 4 with 2 & 3 row Merged</th>
+            </tr>
+            <tr>
+                <th>Column 1</th>
+                <th>Column 2</th>
+                <th>Column 3</th>
+                <!-- <th>Column 4</th> not needed since merged with rowspan in Column 4-->
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- Form -->
+        <!-- form data send to action point i.e. backend area -->
+        <!-- <label> : when we click on the label text then it will open the input text automatically by without clicking on the open area but for and id needs to be same remember this-->
+    <form action="backend.php">
+        <label for="myName"> User: </label><input type="text" name="myName" id="myName">
+        <br>
+        Email: <input type="email" name="myEmail">
+        <br>
+        Date: <input type="datetime" name="Date-Time">
+        <br>
+        Code: <input type="number" name="mycode">
+        <br>
+        Gender: 
+            Male <input type="radio" name="myGender">
+            Female <input type="radio" name="myGender">
+        <br>
+            <!-- <checked> attribute used in the end will automatically checked the box on site load -->
+        Agree With Our Terms & Condition <input type="checkbox" name="myacceptance" checked>
+        <br>
+        <label for="car">Car</label>
+            <!-- <selected> attribute will show and make the default selection of that value -->
+        <select name="myCar" id="car">
+            <option value="Indica">Indica</option>
+            <option value="Tata">Nano</option>
+            <option value="Tata" selected>Jaguar</option>
+            <option value="Maruti">Swift</option>
+        </select>
+        <br>
+        Password: <input type="password" name="myPassword">
+        <br>
+        Write Your Views : <textarea name="myText" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Submit Now">
+        <input type="reset" value="Reset Now">
+    </form>
+
+    <!-- 
+        Inline & Block Elements :- By default tags have a default type weather inline or block but can be changed using CSS;
+
+        > Inline Elements: Occupie only the line area;
+            Eg: span,strong,em,a;
+        > Block Elements: Occupie the full width area;
+            Eg: div,header,nav;
+    -->
+
+    <!-- 
+        <id> is a unique name for an element and can't be same for other elements;
+        <Class> is a common name can be given to many elements;
+            > <.>(period) is for class;
+            > <#>(pound) is for id;
+    -->
+
+    <!--
+    Html Entities :-
+        &nbsp: To use additional spaces;
+        &lt: (<);
+        &gt: (>);
+        &pound: Pound currency symbol;
+        &copy: Copyright symbol;
+        &#8203: Empty character;
+    -->
+
+    <!-- 
+        Semantic Tags: From SEO perspective it's very important;
+            Eg: <article>,<aside>,<details>,<section>,<header>,<footer>,<summary>;
+            Eg: (Of Non-Semantic elements) <div>,<span>;
+    -->
+
+    <!--
+        -----------------------------
+        | HTML -> CSS -> JAVASCRIPT |
+        -----------------------------
+        First HTML 
+        then, CSS
+        then, JAVASCRIPT 
+            > get processed at the end;
+    -->
+
+    <!-- end -->
+</body>
+</html>

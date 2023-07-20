@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+</head>
+<style>
+    .navbar{
+        display: inline-block;
+        flex-direction: column;
+    }
+    .navbar .nav-elements{
+        display: flex;
+        flex-direction: row;
+    }
+</style>
+<body>
+    <h1>Welcome to Flex-Box</h1>
+    <div class="navbar">
+        <ul>
+            <li class="nav-elements">Home</li>
+            <li class="nav-elements">Flex-Box</li>
+            <li class="nav-elements">Contact Us</li>
+            <li class="nav-elements">Join</li>
+        </ul>
+    </div>
+</body>
+</html>
